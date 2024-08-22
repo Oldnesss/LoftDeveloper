@@ -441,4 +441,19 @@ a:hover {
 .map {
   background: url("../assets/images/rectangle_3.png") 50%/contain no-repeat, linear-gradient(#626262, #626262);
   height: 358px;
+}
+
+.feedback {
+  padding-bottom: 180px;
+}
+
+.feedback__title {
+  margin-bottom: 38px;
+}
+
+.feedback__form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
