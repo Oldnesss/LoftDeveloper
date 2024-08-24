@@ -2,19 +2,12 @@
   position: relative;
 
   &::after {
-    
-    content: 'III';
-    
-    position: absolute;
-    top: 0;
+    content: "III";
+
     right: calc(50% + 555px);
     transform: translate(50%, 0%);
-    line-height: 1.15;
 
-    opacity: 0.02;
-    font-size: 400px;
-    font-weight: 700;
-    font-family: $font-accent;
+    @include decorNumber;
   }
 }
 
@@ -23,11 +16,8 @@
 }
 
 .apartments__cards {
-  
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   // grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   gap: 30px;
-
- 
 }

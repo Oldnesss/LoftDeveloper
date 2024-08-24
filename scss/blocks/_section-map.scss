@@ -4,20 +4,14 @@
   position: relative;
 
   &::after {
-    
-    content: 'V';
-    
-    position: absolute;
-    top: 160px;
+    content: "V";
+
     right: calc(50% + 555px);
     transform: translate(50%, 0%);
-    line-height: 1.15;
+    @include decorNumber;
 
-    opacity: 0.02;
+    top: 160px;
     z-index: -1;
-    font-size: 400px;
-    font-weight: 700;
-    font-family: $font-accent;
   }
 }
 .section-map__title {
