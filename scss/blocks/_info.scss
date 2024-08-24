@@ -26,4 +26,12 @@
   &--tel::before {
     background-image: url("./../img/header/phone-call.svg");
   }
+
+  @include mediaTablet {
+    font-size: 14px;
+    &--map,
+    &--tel {
+      padding-left: 25px;
+    }
+  }
 }

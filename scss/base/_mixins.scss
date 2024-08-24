@@ -8,3 +8,9 @@
   font-weight: 700;
   font-family: $font-accent;
 }
+
+@mixin mediaTablet {
+  @media screen and (max-width: $table) {
+    @content;
+  }
+}
