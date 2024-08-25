@@ -5,6 +5,7 @@ body {
   background-color: $dark;
   color: $white;
   font-size: 16px;
+  overflow-y: hidden;
 }
 
 a {
@@ -58,5 +59,8 @@ a {
 .link-bold {
   color: $accent;
   font-weight: 700;
-  
+}
+
+.no-scroll {
+  overflow-y: hidden;
 }
