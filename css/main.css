@@ -161,6 +161,7 @@ a:hover {
   font-family: "Playfait Display", serif;
   color: #d4c17f;
   font-weight: 700;
+  @includ;
 }
 
 .link-bold {
