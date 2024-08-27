@@ -1,9 +1,5 @@
 .cta {
   padding: 180px 0;
-  position: relative;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
 
   background: linear-gradient(180deg, $dark, rgba(36, 43, 51, 0), $dark),
     linear-gradient(rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)),
@@ -41,6 +37,7 @@
     font-size: 14px;
   }
 }
+
 .cta__form {
   display: grid;
   grid-template-columns: 1fr 1fr;

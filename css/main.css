@@ -485,7 +485,6 @@ a:hover {
 
 .cta {
   padding: 180px 0;
-  position: relative;
   background: linear-gradient(180deg, #242b33, rgba(36, 43, 51, 0), #242b33), linear-gradient(rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url("./../img/main/cta/cta-bg.jpg") 50%/cover no-repeat, linear-gradient(#c4c4c4, #c4c4c4);
 }
 @media screen and (max-width: 959px) {
@@ -659,9 +658,19 @@ a:hover {
 .feedback {
   padding-bottom: 180px;
 }
+@media screen and (max-width: 959px) {
+  .feedback {
+    padding-bottom: 90px;
+  }
+}
 
 .feedback__title {
   margin-bottom: 38px;
+}
+@media screen and (max-width: 959px) {
+  .feedback__title {
+    margin-bottom: 19px;
+  }
 }
 
 .feedback__form {
@@ -669,6 +678,11 @@ a:hover {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   align-items: center;
+}
+@media screen and (max-width: 959px) {
+  .feedback__form {
+    grid-template-columns: 1fr;
+  }
 }
 
 .footer {
