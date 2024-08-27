@@ -533,20 +533,13 @@ a:hover {
   }
 }
 
-.cta__form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 35px 30px;
-}
-
 .form__input {
-  width: 255px;
   height: 50px;
   padding: 12px;
   text-align: center;
-  font-size: 14px;
   background-color: rgba(255, 255, 255, 0.2);
   color: #fff;
+  font-size: 14px;
   transition: background-color 0.2s ease-in;
 }
 .form__input::-moz-placeholder {
@@ -556,29 +549,37 @@ a:hover {
   color: #bebebe;
 }
 .form__input:focus {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
 .form__privacy {
   font-size: 13px;
-  color: #E7E7e7;
+  color: #E7E7E7;
   text-align: center;
   line-height: 1.23;
 }
+@media screen and (max-width: 959px) {
+  .form__privacy--bottom {
+    grid-row: 4/5;
+  }
+}
 
 .form__btn {
-  width: 255px;
   height: 50px;
-  line-height: 1.68;
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
   font-weight: 700;
+  text-align: center;
   background-color: #d4c17f;
   transition: background-color 0.2s ease-in;
 }
 .form__btn:hover {
-  background-color: #e5ca6e;
+  background-color: #ddc676;
 }
 
 .video {
+  overflow: hidden;
   text-align: center;
   position: relative;
 }
@@ -621,6 +622,12 @@ a:hover {
   transform: translate(-50%, -50%);
   transition: all 0.2s ease-in;
 }
+@media screen and (max-width: 959px) {
+  .video__icon {
+    width: 80px;
+    height: 80px;
+  }
+}
 
 .video__link:hover .video__icon {
   transform: translate(-50%, -50%) scale(1.2);
@@ -645,9 +652,19 @@ a:hover {
   top: 160px;
   z-index: -1;
 }
+@media screen and (max-width: 959px) {
+  .section-map {
+    padding: 90px 0;
+  }
+}
 
 .section-map__title {
   margin-bottom: 88px;
+}
+@media screen and (max-width: 959px) {
+  .section-map__title {
+    margin-bottom: 44px;
+  }
 }
 
 .map {
